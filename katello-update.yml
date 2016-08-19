@@ -1,0 +1,16 @@
+- hosts: all
+  become: true
+
+  vars:
+    rhsub_repos:
+      - name: rhel-*-server-satellite-tools-6.1-rpms
+        state: disable
+      - name: rhel-*-server-satellite-tools-6.2-rpms
+        state: enable   
+
+  roles:
+    - { roles: rh-subscription-manager }
+
+  tasks:
+    - name: Update katello-agent
+      yum: name=katello-agent state=latest 
