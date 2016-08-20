@@ -9,7 +9,7 @@
         state: enable   
 
   roles:
-    - { roles: rh-subscription-manager }
+    - { role: rh-subscription-manager }
 
   tasks:
     - name: Update katello-agent
