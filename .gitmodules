@@ -1,6 +1,6 @@
 [submodule "inventory"]
 	path = inventory
-	url = git@gitlab.ncs.mcgill.ca:ansible/foreman_ansible_inventory.git
+        url = https://github.com/theforeman/foreman_ansible_inventory.git
 [submodule "roles/rh-subscription-manager"]
 	path = roles/rh-subscription-manager
-	url = git@gitlab.ncs.mcgill.ca:ansible/role-rh-subscription-manager.git
+        url = https://github.com/chrispoupart/ansible-role-subscription-manager.git
